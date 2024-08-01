@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class CashbackHackServiceTest {
     @Test
-    void checkRemainWhenAmountEqualsToBoundary() {
+    public void checkRemainWhenAmountEqualsToBoundary() {
         CashbackHackService service = new CashbackHackService();
 
         long actual = service.remain(1000);
@@ -15,7 +15,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void checkRemainWhenAmountAboveBoundary() {
+    public void checkRemainWhenAmountAboveBoundary() {
         CashbackHackService service = new CashbackHackService();
 
         long actual = service.remain(1100);
@@ -25,7 +25,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void checkRemainWhenAmountBelowBoundary() {
+    public void checkRemainWhenAmountBelowBoundary() {
         CashbackHackService service = new CashbackHackService();
 
         long actual = service.remain(400);
