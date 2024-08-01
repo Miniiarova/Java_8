@@ -9,7 +9,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         long actual = service.remain(1000);
-        long expected = 1000;
+        long expected = 0;
 
         Assert.assertEquals(actual, expected);
     }
